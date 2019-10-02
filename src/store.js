@@ -3,7 +3,7 @@ import axios from "axios";
 
 class Store {
   installPrompt = null;
-  API_KEY = "6c73b2d5aa5f53f9af1971e5d32cae7b";
+  API_KEY = "faf5c7efb16c8bb8b6c70d768702728d";
   baseUrl = "https://api-v3.igdb.com/";
   proxyUrl = "https://cors-anywhere.herokuapp.com/";
   @observable gameCards = [];
