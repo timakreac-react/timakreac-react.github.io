@@ -1,0 +1,16 @@
+.error404 * {
+  text-align: center;
+}
+.error404 h1 {
+  font-size: 40px;
+  margin-top: 40vh;
+}
+.error404 h4 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.error404 a {
+  color: #333;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #333;
+}
