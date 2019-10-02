@@ -1,0 +1,163 @@
+.gauge-progress {
+  stroke: #10af65;
+  transition: all 3s ease 0s;
+}
+.container {
+  position: relative;
+}
+.card {
+  padding-bottom: 50px;
+  overflow: hidden;
+  background: #fafafa;
+  z-index: 0;
+  padding-top: 50px;
+  min-height: 800px;
+  color: #fff;
+  position: relative;
+}
+.card-header {
+  height: 540px;
+}
+.header-logo.card-logo {
+  margin-bottom: 200px;
+}
+.card-bg {
+  width: 100%;
+  height: 540px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transform: scale(1.05);
+}
+.card-bg::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  height: 22px;
+  bottom: -17px;
+  left: 0;
+  background-color: #fafafa;
+}
+.card-bg img {
+  position: relative;
+  filter: blur(6px);
+  height: 100%;
+  width: 100%;
+}
+
+.card-bg::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+.card-img {
+  width: 264px;
+  height: 352px;
+  position: absolute;
+}
+.card-img img {
+  width: 264px;
+  height: 352px;
+}
+.card-wrapText {
+  margin-top: 10px;
+  margin-left: 300px;
+}
+.card-title {
+  font-size: 50px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.card-date {
+  opacity: 0.8;
+  letter-spacing: 1.5px;
+  font-size: 26px;
+}
+.card-company {
+  opacity: 0.8;
+  margin-top: 20px;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+}
+.card-rating {
+  position: absolute;
+  right: 20px;
+  top: 430px;
+}
+.card-body {
+  color: #222;
+}
+.card-body > .container {
+  padding-left: 300px;
+}
+.card-genre {
+  letter-spacing: 1px;
+}
+.card-genre_title,
+.card-platform_title,
+.card-descr span {
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+.card-descr,
+.card-platform {
+  max-width: 500px;
+  margin-top: 15px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+.card-img-mob img {
+  display: none;
+}
+@media screen and (max-width: 776px) {
+  .card-title {
+    font-size: 32px;
+  }
+  .card-date {
+    font-size: 20px;
+  }
+  .card-company {
+    font-size: 16px;
+  }
+  .card-body > .container {
+    padding-left: 15px;
+  }
+  .card-genre {
+    margin-top: 70px;
+  }
+  .card-descr {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .card-img {
+    display: none;
+  }
+  .card-img-mob img {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 30px;
+  }
+  .card-wrapText {
+    margin-left: 15px;
+  }
+  .card-genre {
+    margin-top: 30px;
+  }
+}

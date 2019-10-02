@@ -1,0 +1,35 @@
+#genres {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+#genres h2 {
+  font-size: 26px;
+  margin: 20px 0;
+  font-weight: 600;
+}
+#genres ul {
+  margin: 0 auto;
+  max-width: 800px;
+}
+#genres li {
+  margin: 5px 10px;
+  padding: 10px 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  transition: all 0.5s;
+  display: inline-block;
+}
+#genres li:hover {
+  background: #000;
+}
+#genres li:hover a {
+  color: #fff;
+}
+#genres a {
+  cursor: pointer;
+  display: inline-block;
+  color: #333;
+  font-size: 18px;
+}
